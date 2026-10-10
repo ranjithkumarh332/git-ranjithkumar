@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Ranjithkumar's personal portfolio and coding journey.">
+  <title>Ranjithkumar | Personal Portfolio</title>
+  <style>
+    :root {
+      --bg: #0b1020;
+      --panel: #141c30;
+      --text: #eef2ff;
+      --muted: #aab5ce;
+      --accent: #60a5fa;
+      --accent2: #a78bfa;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      background: radial-gradient(circle at top right, #1d2a4a 0, var(--bg) 42%);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    .container { width: min(1080px, 92%); margin: auto; }
+    header { padding: 22px 0; border-bottom: 1px solid #26324b; }
+    nav { display: flex; justify-content: space-between; align-items: center; gap: 18px; flex-wrap: wrap; }
+    .logo { font-weight: 800; letter-spacing: .3px; }
+    nav a { color: var(--muted); text-decoration: none; margin-left: 18px; }
+    nav a:hover { color: white; }
+    .hero { padding: 76px 0 54px; display: grid; grid-template-columns: 1.2fr .8fr; gap: 32px; align-items: center; }
+    .eyebrow { color: var(--accent); font-weight: 700; text-transform: uppercase; letter-spacing: 2px; font-size: .8rem; }
+    h1 { font-size: clamp(2.4rem, 6vw, 4.4rem); line-height: 1.08; margin: 12px 0 18px; }
+    .gradient { background: linear-gradient(90deg, var(--accent), var(--accent2)); -webkit-background-clip: text; background-clip: text; color: transparent; }
+    .lead { color: var(--muted); font-size: 1.08rem; max-width: 620px; }
+    .buttons { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 26px; }
+    .btn { display: inline-block; padding: 11px 17px; border-radius: 10px; text-decoration: none; font-weight: 700; }
+    .primary { background: var(--accent); color: #07101f; }
+    .secondary { border: 1px solid #52617e; color: var(--text); }
+    .hero-card, .card { background: rgba(20, 28, 48, .9); border: 1px solid #2a3753; border-radius: 18px; padding: 24px; }
+    .hero-card h2 { margin-top: 0; }
+    section { padding: 36px 0; }
+    .section-title { font-size: 1.8rem; margin: 0 0 8px; }
+    .section-intro { color: var(--muted); margin-top: 0; }
+    .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+    .card h3 { margin-top: 0; }
+    .tag { display: inline-block; padding: 5px 9px; margin: 4px 4px 0 0; border-radius: 999px; background: #202d49; color: #c8d7f5; font-size: .85rem; }
+    .meme-card { max-width: 850px; margin: 22px auto 0; padding: 14px; background: #111827; border: 1px solid #334155; border-radius: 18px; }
+    .meme-card img { display: block; width: 100%; height: auto; border-radius: 10px; }
+    .meme-caption { color: var(--muted); text-align: center; margin: 12px 8px 4px; }
+    .contact-links a { color: var(--accent); margin-right: 18px; }
+    footer { border-top: 1px solid #26324b; margin-top: 40px; padding: 24px 0; color: var(--muted); text-align: center; }
+    @media (max-width: 760px) {
+      .hero { grid-template-columns: 1fr; padding-top: 48px; }
+      .grid { grid-template-columns: 1fr; }
+      nav a { margin-left: 0; margin-right: 12px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav aria-label="Main navigation">
+        <div class="logo">Ranjithkumar.dev</div>
+        <div>
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#learning">Learning Journey</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="container hero" id="about">
+      <div>
+        <div class="eyebrow">Computer Science Student • Developer in Progress</div>
+        <h1>Hi, I'm <span class="gradient">Ranjithkumar.</span></h1>
+        <p class="lead">I'm a Computer Science student exploring software development, building projects, and learning one skill at a time. This portfolio documents my progress—from Git and GitHub basics to bigger projects.</p>
+        <div class="buttons">
+          <a class="btn primary" href="#learning">See my learning journey</a>
+          <a class="btn secondary" href="#contact">Contact me</a>
+        </div>
+      </div>
+      <aside class="hero-card">
+        <h2>Current focus 🚀</h2>
+        <p>Building strong foundations in programming and software engineering.</p>
+        <span class="tag">Git</span><span class="tag">GitHub</span><span class="tag">Java</span><span class="tag">Problem Solving</span>
+      </aside>
+    </section>
+
+    <section class="container" id="skills">
+      <h2 class="section-title">Skills I'm building</h2>
+      <p class="section-intro">A growing toolkit—updated as I learn and build.</p>
+      <div class="grid">
+        <article class="card">
+          <h3>Version Control</h3>
+          <p>Learning to track code changes, commit work, create branches, and collaborate using Git and GitHub.</p>
+        </article>
+        <article class="card">
+          <h3>Programming</h3>
+          <p>Practising programming fundamentals and problem-solving, with a focus on writing clear, maintainable code.</p>
+        </article>
+        <article class="card">
+          <h3>Projects</h3>
+          <p>Turning concepts into practical projects and documenting what I learn along the way.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="container" id="learning">
+      <h2 class="section-title">Today's learning: Git &amp; GitHub 🐙</h2>
+      <p class="section-intro">Every developer starts somewhere. Here's a meme to celebrate today's progress!</p>
+      <div class="meme-card">
+        <img src="assets/git-github-learning-meme.png" alt="Two-panel meme showing confusion about Git and GitHub before learning, and confidence after learning Git commands and repository basics.">
+        <p class="meme-caption">From “Git what?” to “git add, commit, push.” Small steps, big progress.</p>
+      </div>
+    </section>
+
+    <section class="container" id="contact">
+      <h2 class="section-title">Let's connect</h2>
+      <p class="section-intro">Replace the example links below with your preferred contact details.</p>
+      <div class="card contact-links">
+        <a href="https://github.com/" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="mailto:your.email@example.com">Email</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">Built while learning. © <span id="year"></span> Ranjithkumar</div>
+  </footer>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
